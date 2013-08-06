@@ -1,4 +1,4 @@
-cchc-foundation
-===============
+project-starter-template
+========================
 
-CCHC Foundation converted from Chris's PHP files
+Template for web projects with Hammer and Foundation4
