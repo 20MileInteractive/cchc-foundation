@@ -1,5 +1,15 @@
 // Base style sheet
 
+.photo-right {
+	float: right;
+	margin: 0 0 1rem 1rem;
+}
+
+.photo-left {
+	float: left;
+	margin: 0 1rem 1rem 0;
+}
+
 .accordion h3.title {
 	margin: 0;
 }
