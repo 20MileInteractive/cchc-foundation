@@ -1,1 +1,13 @@
 // Base style sheet
+
+.accordion h3.title {
+	margin: 0;
+}
+
+i.tri {
+	
+	@include css-triangle(10, #ccc, top);
+	display: inline-block;
+}
+
+.gift {border-bottom: 1px solid #f1f1f1;}
