@@ -14,6 +14,8 @@
 	margin: 0;
 }
 
+.section-container section .title a, .section-container .section .title a {white-space: normal;}
+
 i.tri {
 	
 	@include css-triangle(10, #ccc, top);
