@@ -1,5 +1,9 @@
 // Base style sheet
 
+.button.primary [class*="#{$classPrefix}"] {
+	color: lighten($primary-color, 15%);
+}
+
 .photo-right {
 	float: right;
 	margin: 0 0 1rem 1rem;

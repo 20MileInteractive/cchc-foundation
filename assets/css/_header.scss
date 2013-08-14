@@ -1,4 +1,17 @@
 header {
 	padding-top: 1rem;
+	background: #083D6F url(header-bg.png);
+	margin-bottom: 3rem;
+
 	h1.site-id {margin: 0 0 1rem;}
+
+	.nav-row {background: #00a9e0;
+
+		// form {
+		// 	margin: .5rem 0 0;
+		// }
+
+		.top-bar-section ul li a:hover {background: #009dd1;}
+	}
 }
+
