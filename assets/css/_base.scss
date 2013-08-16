@@ -1,7 +1,19 @@
 // Base style sheet
 
-.button.primary [class*="#{$classPrefix}"] {
-	color: lighten($primary-color, 15%);
+h1 {margin-bottom: 0;}
+h2 {font-style: italic;}
+
+// .button.primary [class*="#{$classPrefix}"] {
+// 	color: lighten($primary-color, 15%);
+// }
+
+
+.button i {
+	padding-right: .25rem; 
+	opacity: .4;
+	// vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
 }
 
 .photo-right {
@@ -14,16 +26,25 @@
 	margin: 0 1rem 1rem 0;
 }
 
-.accordion h3.title {
+.accordion h4.title {
 	margin: 0;
+	font-size: emCalc(18px);
+
+	i {
+		font-size: emCalc(12px); 
+		padding-left:1rem;
+		color: $primary-color;
+	}
+
+	a:hover {background: $primary-color; color: #fff;}
+
+	a:hover i {color: #fff;}
 }
 
 .section-container section .title a, .section-container .section .title a {white-space: normal;}
 
-i.tri {
-	
-	@include css-triangle(10, #ccc, top);
-	display: inline-block;
-}
 
 .gift {border-bottom: 1px solid #f1f1f1;}
+
+.panel {border: 0px none;}
+aside .panel, aside.panel {border: none 0px; background: lighten($primary-color, 35%);}
