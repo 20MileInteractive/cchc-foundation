@@ -1,7 +1,11 @@
 // Base style sheet
 
-h1 {margin-bottom: 0;}
-h2 {font-style: italic;}
+
+.page-intro {
+	h1 {margin-bottom: 0;}
+	h2 {font-size: emCalc(24px); color: #575757;}
+}
+
 
 // .button.primary [class*="#{$classPrefix}"] {
 // 	color: lighten($primary-color, 15%);
