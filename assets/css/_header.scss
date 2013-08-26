@@ -1,9 +1,9 @@
 header {
-	padding-top: 1rem;
+	padding-top: 5%;
 	background: #083D6F url(header-bg.png);
 	margin-bottom: 3rem;
 
-	h1.site-id {margin: 0 0 1.5rem;}
+	h1.site-id {margin: 0 0 3rem;}
 
 	.nav-row {background: #00a9e0;
 
@@ -13,5 +13,30 @@ header {
 
 		.top-bar-section ul li a:hover {background: #009dd1;}
 	}
+
+	.header-cta {margin-left: .5em;}
+	.header-cta a{
+		color: #919395;
+	}
+
+	.header-cta li {
+		margin: 0 1em 0 0;
+		line-height: 33px;
+		font-size: 1em;
+	}
+
+	.header-cta a {padding: 0 16px 0 60px;}
+	.header-cta a:hover {color: #fff;}
+	.header-cta a#myhealth {
+		background: url(mcch-logo.jpg) no-repeat #204166;
+	}
+
+	.header-cta a#give {
+		background: url(donate-icon.jpg) no-repeat #204166;
+	}
 }
 
+
+@media #{$small} { 
+	header .header-cta li {float: right;}
+}
