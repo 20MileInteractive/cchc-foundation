@@ -2,16 +2,38 @@
 	// background: #f1f1f1 url(http://placehold.it/970x500&amp;text=background) no-repeat 0 0;
 	// background-size: cover;
 	margin-top: -3rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 
 	h2 {
 		font-size: emCalc(30px);
 		font-style: normal;
 	}
 
+	.orbit-container {padding-bottom: 1em; background: transparent;}
 	.orbit-container .orbit-slides-container > * {height: auto;}
-	.orbit-bullets {display: none;}
+	.orbit-slide-number{display: none;}
 	.orbit-container .orbit-prev, .orbit-container .orbit-next {z-index: 30;}
+
+	.orbit-bullets {
+		position: absolute;
+		z-index: 35;
+		top: 1em; left: 2em;
+		opacity: .75%;
+
+		li {border: 0 none; width: 14px; height: 14px;}
+		li.active {background: $primary-color;}
+	}
+
+	.cta {
+		width: 100%;
+		text-align: center;
+		z-index: 35;
+		position: absolute;
+		bottom: 0; left: 0;
+		margin: 0;
+
+		.button {margin: 0 0 -1em;}
+	}
 
 	.overlay {
 		position: absolute;
