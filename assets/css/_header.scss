@@ -34,9 +34,36 @@ header {
 	.header-cta a#give {
 		background: url(donate-icon.jpg) no-repeat #204166;
 	}
+	.top-bar .top-bar-section li {
+		border-top: solid 1px #14c5ff;
+		border-bottom: solid 1px #0083ad;
+		border-left: none;
+		border-right: none;
+		&:first-child {
+			border-top: none;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
 }
 
 
 @media #{$small} { 
 	header .header-cta li {float: right;}
+}
+
+@media #{$topbar-media-query} { 
+	header .top-bar .top-bar-section li {
+		border-left: solid 1px #14c5ff;
+		border-right: solid 1px #0083ad;
+		border-bottom: none;
+		border-top: none;
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
 }
