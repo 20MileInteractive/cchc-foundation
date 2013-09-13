@@ -52,3 +52,21 @@
 
 .panel {border: 0px none;}
 aside .panel, aside.panel {border: none 0px; background: lighten($primary-color, 35%);}
+
+.content ul {
+	list-style-position: outside;
+	margin-left: 1.25em;
+}
+
+#publications article {
+	margin-bottom: 2em;
+}
+.futurepast {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.benefits {
+		border-left: solid 1px #f1f1f1;
+	}
+}

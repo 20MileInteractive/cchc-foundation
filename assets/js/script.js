@@ -7,4 +7,5 @@ $(document).ready(function() {
     	var pageToLoad = window.location.pathname + $(this).attr('id');
 		$(this).load(pageToLoad);
 	});
+	$('.futurepast').first().show();
 });
