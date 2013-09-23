@@ -69,4 +69,20 @@ aside .panel, aside.panel {border: none 0px; background: lighten($primary-color,
 	.benefits {
 		border-left: solid 1px #f1f1f1;
 	}
+}.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 16px;
+}
+.videoWrapper iframe, .videoWrapper object {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.fundraiser p {
+	margin: 0;
 }
